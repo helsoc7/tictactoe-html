@@ -7,7 +7,7 @@
      {
       "specs": 
       {"title":"HTML Datei namens grid.html mit HTML Tabelle erstellen",
-      "list": ["Erstelle eine HTML-Datei mit dem Namen 'grid.html'", '"In dieser Datei soll eine Tabelle erstellt werden"],
+      "list": ["Erstelle eine HTML-Datei mit dem Namen 'grid.html'", "In dieser Datei soll eine Tabelle erstellt werden"],
       "code-example": "<table></table>"
     },
       "name": "HTML file must contain a table tag",
