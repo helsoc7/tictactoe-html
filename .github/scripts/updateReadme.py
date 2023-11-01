@@ -73,7 +73,7 @@ if __name__ == "__main":
 
                 if "code_example" in have_specs:
                     #write_smallersection(readme_file, "Code-Beispiel:", f"`{have_specs.get('code_example')}`")
-                    readme_file.write(f" ```{have_specs.get('code_example')}```\n")
+                    readme_file.write(f" {have_specs.get('code_example')}\n")
 
                 if "urls" in test:
                     #content = "\n".join([f"* [Spickzettel]({l})" for l in test["urls"]])
