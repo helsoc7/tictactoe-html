@@ -1,0 +1,35 @@
+name: Automatic Repo Setup
+
+on:
+  push:
+    branches:
+      - main # or whatever the default branch is (e.g., 'master')
+
+jobs:
+  setup:
+    if: "! contains(github.event.head_commit.message, 'Automatic setup')" # To prevent potential infinite loops
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update content if needed
+      env:
+        CI: true # This ensures GitHub Actions treats shell commands' errors as fatal
+        REPO_NAME: ${{ github.repository }}
+      run: |
+        IS_SETUP=$(jq -r .repo .github/classroom/autograding.json)
+        
+        if [ "$IS_SETUP" != "$REPO_NAME" ]; then
+          jq --arg rn "$REPO_NAME" '.repo = $rn' .github/classroom/autograding.json > tmp.json
+          cat tmp.json > .github/classroom/autograding.json
+          python3 .github/scripts/updateReadme.py
+
+          # Commit and push changes
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Readme.md .github/classroom/autograding.json
+          git commit -m "Automatic setup"
+          git push
+        fi
