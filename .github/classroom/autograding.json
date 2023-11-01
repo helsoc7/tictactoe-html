@@ -1,5 +1,5 @@
 {
-  "repo": "helsoc7/tictactoe-html",
+  "repo": "TechstarterGmbH/tictactoe-html-helsoc7",
   "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.",
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png",
   "timeframe": "30 Minuten (Viel Erfolg!)",
@@ -11,7 +11,7 @@
           "Erstelle eine HTML-Datei mit dem Namen 'grid.html'",
           "In dieser Datei soll eine Tabelle erstellt werden"
         ],
-        "code-example": "<table></table>"
+        "code-example": "&lt;table&gt;&lt;/table&gt;"
       },
       "name": "HTML file must contain a table tag",
       "feedback": "Your HTML file does not have a <table> element. Please add a table tag.",
@@ -42,7 +42,7 @@
     {
       "specs": {
         "title": "Tabelle mit der Tabellenüberschrift 'TicTacToe' erstellen",
-        "code-example": "<caption></caption>"
+        "code-example": "&lt;caption&gt;&lt;/caption&gt;"
       },
       "name": "Include a table caption titled 'TicTacToe'",
       "feedback": "Your table should have a caption (<caption> element) with the title 'TicTacToe'.",
@@ -73,7 +73,7 @@
     {
       "specs": {
         "title": "HTML Tabelle um 9 Tabellenfelder erweitern",
-        "code-example": "<td></td>"
+        "code-example": "&lt;td&gt;&lt;/td&gt;"
       },
       "name": "Create nine cells within the table",
       "feedback": "Your table must contain exactly nine cells (<td> elements).",
@@ -89,7 +89,7 @@
     {
       "specs": {
         "title": "Jeweils pro Tabellenfeld einen <button> hinzufügen",
-        "code-example": "<button type='button'></button>"
+        "code-example": "&lt;button&gt;&lt;/button&gt;"
       },
       "name": "Place a button in each cell",
       "feedback": "Each cell in your table must contain a button.",
@@ -105,7 +105,7 @@
     {
       "specs": {
         "title": "Jeder Button sollte X anzeigen",
-        "code-example": "<button type='button'>Click Me!</button>"
+        "code-example": "&lt;button type='button'&gt;Click Me!&lt;/button&gt;"
       },
       "name": "Place a button with 'X' in each cell",
       "feedback": "Each cell in your table must contain a button displaying 'X'.",
@@ -121,7 +121,7 @@
     {
       "specs": {
         "title": "Benennen der IDs jedes Buttons von cell1 bis cell9",
-        "code-example": "<button id='cell1'>X</button>"
+        "code-example": "&lt;button type='button' id='cell1'&gt;X&lt;/button&gt;"
       },
       "name": "Assign unique IDs to each button",
       "feedback": "Each button must have a unique ID, from 'cell1' to 'cell9'.",
