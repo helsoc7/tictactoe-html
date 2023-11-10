@@ -1,5 +1,5 @@
 {
-  "repo": "helsoc7/tictactoe-html",
+  "repo": "helsoc7/ti-html",
   "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.",
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png",
   "timeframe": "30 Minuten (Viel Erfolg!)",
@@ -88,7 +88,7 @@
     },
     {
       "specs": {
-        "title": "Jeweils pro Tabellenfeld einen <button> hinzufügen",
+        "title": "Jeweils pro Tabellenfeld einen Button hinzufügen",
         "code-example": "&lt;button&gt;&lt;/button&gt;"
       },
       "name": "Place a button in each cell",
