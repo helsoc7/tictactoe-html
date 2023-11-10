@@ -18,6 +18,6 @@ jobs:
     steps:
       - name: Install puppeteer
         run: |
-          npm install -g puppeteer
+          npm install -g puppeteer@21.4.1
       - uses: actions/checkout@v4
       - uses: GittyBitch/autograding@feature/feedback
