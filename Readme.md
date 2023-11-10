@@ -43,7 +43,7 @@ Hilfe:
 <ul><li><a href="https://www.w3schools.com/tags/tag_td.asp#:~:text=The%20tag%20defines%20a,with%20the%20element)">Spickzettel</a></li></ul> 
 
 ---
-<li> Jeweils pro Tabellenfeld einen <button> hinzufügen (15 Punkte)</li>
+<li> Jeweils pro Tabellenfeld einen Button hinzufügen (15 Punkte)</li>
 Code-Beispiel: 
 <ul><li><code>&lt;button&gt;&lt;/button&gt;</code></li></ul>
 Hilfe: 
