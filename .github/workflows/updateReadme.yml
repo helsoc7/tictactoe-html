@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # or whatever the default branch is (e.g., 'master')
+      - master
 
 jobs:
   setup:
